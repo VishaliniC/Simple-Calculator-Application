@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Calculator🧮</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="app.js" defer></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+    </head>
+    <body id="main">
+        <div class="container">
+            <center>
+                <div>
+                    <button id="backgound">&nbsp;</button>
+                </div>
+                <table class="bg-success">
+                    <tr> 
+                        <td colspan="4"> <input type="text" id="output-screen" class="textbox" placeholder="0"> </td>
+                    </tr>
+                    <tr>
+                        <td> <button class="btn zoom" onclick="clr()">C</button> </td>
+                        <td> <button class="btn zoom" onclick="del()">DEL</button> </td>
+                        <td> <button class="btn zoom" onclick="display('%')">%</button> </td>
+                        <td> <button class="btn zoom" onclick="display('/')">/</button> </td>
+                    </tr>
+                    <tr>
+                        <td> <button class="btn zoom" onclick="display('7')">7</button> </td>
+                        <td> <button class="btn zoom" onclick="display('8')">8</button> </td>
+                        <td> <button class="btn zoom" onclick="display('9')">9</button> </td>
+                        <td> <button class="btn zoom" onclick="display('*')">*</button> </td>
+                    </tr>
+                    <tr>
+                        <td> <button class="btn zoom" onclick="display('4')">4</button> </td>
+                        <td> <button class="btn zoom" onclick="display('5')">5</button> </td>
+                        <td> <button class="btn zoom" onclick="display('6')">6</button> </td>
+                        <td> <button class="btn zoom" onclick="display('-')">-</button> </td>
+                    </tr>
+                    <tr>
+                        <td> <button class="btn zoom" onclick="display('1')">1</button> </td>
+                        <td> <button class="btn zoom" onclick="display('2')">2</button> </td>
+                        <td> <button class="btn zoom" onclick="display('3')">3</button> </td>
+                        <td> <button class="btn zoom" onclick="display('+')">+</button> </td>
+                    </tr>
+                    <tr>
+                        <td> <button class="btn zoom lastbtn" onclick="display('.')">.</button> </td>
+                        <td> <button class="btn zoom lastbtn" onclick="display('0')">0</button> </td>
+                        <td colspan="2"> <button class="btn zoom colspan" onclick="result()">=</button> </td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp</td>
+                    </tr>
+                </table>
+            </center>
+        </div>
+    </body>
+</html>
